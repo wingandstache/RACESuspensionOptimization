@@ -26,6 +26,10 @@ For k=1:n
 	theta=theta(previous)-(ak*momentumBiasCorrected)/(sqrt(velocityBiasCorrected)+epsilon)  # New position
 	theta=min(theta, thetaMax) # Keep within desired bounds
     theta=max(theta, thetaMin)
+
+This algorithim is based off of these papers:
+https://www.jhuapl.edu/SPSA/PDF-SPSA/Spall_An_Overview.PDF
+https://arxiv.org/pdf/1412.6980
 '''
 import numpy as np
 
